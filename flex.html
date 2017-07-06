@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            /*display: flex;*//*弹性盒子(容器)*/
+            /*justify-content: space-between;*//*主轴水平居中*/
+            /*align-items: center;*//*副轴垂直居中
+            height: 100px;
+            background-color: #ccc;
+            padding: 0 10px;
+            /*flex-direction: column;*//*改变容器主轴方向*/
+            /*flex-wrap: wrap;*/
+            /*justify-content: flex-end;*//*右对齐*/
+            /*justify-content: flex-start;*//*左对齐*/
+            /*justify-content: space-around;*//*左右各占一份*/
+            background-color: #ccc;
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .mid{
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .top{
+            flex-basis: 80px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #00bcd4;
+            padding: 0 10px;
+        }
+        .bot{
+            flex-basis: 80px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #00bcd4;
+            padding: 0 10px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="box"><!-- 容器 -->
+        <div class="top">
+            <button>111</button>
+            <h3>hello</h3>
+            <button>000</button>
+        </div>
+        <div class="mid">
+            <div style='text-align: center;'>
+                <h1>hello</h1>
+                <p>hello</p>
+                <button>click</button>
+            </div>
+        </div>
+        <div class="bot">
+            <button>456</button>
+            <button>123</button>
+            <button>4564</button>
+            <button>4564</button>
+        </div>
+    </div>
+
+        <!-- 弹性容器的主轴默认是从左到右水平方向，从上到下竖直方向为副轴 -->
+    </body>
+</html>
